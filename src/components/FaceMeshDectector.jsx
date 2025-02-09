@@ -19,7 +19,6 @@ function FaceMeshDectector() {
 
       await tf.setBackend('webgl');  
 
-
       const model = faceLandmarksDetection.SupportedModels.MediaPipeFaceMesh;
       const detectorConfig = { runtime: "tfjs" };
       const detector = await faceLandmarksDetection.createDetector(model, detectorConfig);
